@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDragon - JavaScript Game</title>
+    <title>iDragon Adventures</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="gameContainer">
-        <div class="gameOver">Welcome to iDragon Adventures</div>
-        <!-- <div class="gameOver">Welcome to iDragon - Created by Harry</div> -->
-        <div class="dino"></div>
-        <div id="scoreCont">Your Score: 0</div>
-        <div class="obstacle obstacleAni"></div>
+    <div id="startPage">
+        <div class="startContent">
+            <h1 class="gameTitle">Chota Bheem Adventures</h1>
+            <p class="gameDescription">With each powerful jump, Chota Bheem showcases his skills, dodging the bull's fierce charges and unleashing his unmatched bravery.</p>
+            <button id="startButton">Start Game</button>
+        </div>
     </div>
+
+    <div id="gamePage" style="display: none;">
+        <div class="gameContainer">
+            <div class="gameOver">Welcome to iDragon Adventures</div>
+            <div class="dino"></div>
+            <div id="scoreCont">Your Score: 0</div>
+            <div class="obstacle obstacleAni"></div>
+        </div>
+    </div> 
+
+    <div id="overlay" style="display: none;">
+        <img  src="bheem.gif" alt="GIF Image">
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
