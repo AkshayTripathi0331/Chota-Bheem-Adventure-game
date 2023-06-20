@@ -1,8 +1,8 @@
-*{
+/* Reset default margin and padding for all elements */
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-
 
 /* STARTING PAGE */
 body {
@@ -12,6 +12,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Styling for the starting page */
 #startPage {
     display: flex;
     align-items: center;
@@ -52,6 +53,7 @@ body {
 }
 
 /* BHEEM PUNCH */
+/* Overlay for the Bheem punch */
 #overlay {
     display: flex;
     align-items: center;
@@ -70,12 +72,13 @@ body {
     max-height: 100%;
 }
 
-
-body{
+/* Styling for the game */
+body {
     background-color: red;
     overflow: hidden;
 }
-.gameContainer{
+
+.gameContainer {
     background-image: url(jungle.gif);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -83,7 +86,7 @@ body{
     height: 100vh;
 }
 
-.dino{
+.bheem {
     background-image: url(bheem.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,11 +94,11 @@ body{
     width: 140px;
     height: 130px;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 52px;
 }
 
-.obstacle{
+.bull {
     width: 160px;
     height: 150px;
     border-radius: 50%;
@@ -106,23 +109,23 @@ body{
     left: 44vw;
 }
 
-.animateDino{
-    animation: dino 0.6s linear;
+.animateBheem {
+    animation: bheem 0.6s linear;
 }
 
-.obstacleAni{
-    animation: obstacleAni 5s linear infinite;
+.bullAni {
+    animation: bullAni 5s linear infinite;
 }
 
-.gameOver{
+.gameOver {
     position: relative;
-    top:63px;
+    top: 63px;
     font-size: 53px;
-    text-align: center; 
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
 
-#scoreCont{
+#scoreCount {
     font-size: 25px;
     color: #54212f;
     font-weight: bold;
@@ -135,24 +138,24 @@ body{
     border-radius: 10px;
 }
 
-@keyframes dino{
-    0%{
+/* Animation keyframes */
+@keyframes bheem {
+    0% {
         bottom: 0;
     }
-    50%{
+    50% {
         bottom: 422px;
     }
-    100%{
+    100% {
         bottom: 0; 
     }
 }
 
-@keyframes obstacleAni{
-    0%{
+@keyframes bullAni {
+    0% {
         left: 100vw;
     }
-    100%{
+    100% {
         left: -10vw;
     }
 }
-
